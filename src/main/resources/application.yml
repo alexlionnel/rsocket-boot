@@ -1,0 +1,10 @@
+spring:
+  rsocket:
+    server:
+      port: 6565
+      # ssl:
+        #  enabled: true
+        #  key-store-type: PKCS12
+        #  key-store: /Users/97023r/IdeaProjects/rsocket-boot/ssl-tls/rsocket-server.p12
+        #  key-store-password: password
+      #  key-alias: rsocket

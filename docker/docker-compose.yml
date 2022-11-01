@@ -1,0 +1,11 @@
+version: "3"
+services:
+  nginx:
+    image: nginx:1.15-alpine
+    volumes:
+      - ./conf:/etc/nginx/conf.d
+    ports:
+      - "6566:6566"
+    extra_hosts:
+      - "host-gateway:146.16.13.3"
+    command: "nginx -c /etc/nginx/conf.d/nginx.conf"
